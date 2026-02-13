@@ -53,7 +53,7 @@ const About = () => {
 
   const team = [
     { 
-      name: 'Alex Thompson', 
+      name: 'Shyam Gupta', 
       role: 'CEO & Founder', 
       emoji: '👨‍💼', 
       expertise: 'Business Strategy',
@@ -61,7 +61,7 @@ const About = () => {
       gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
     },
     { 
-      name: 'Sarah Chen', 
+      name: 'Sohan Verma', 
       role: 'CTO', 
       emoji: '👩‍💻', 
       expertise: 'Full-Stack Development',
@@ -69,7 +69,7 @@ const About = () => {
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
     },
     { 
-      name: 'Michael Rodriguez', 
+      name: 'Amit Singh', 
       role: 'Design Lead', 
       emoji: '👨‍🎨', 
       expertise: 'UI/UX Design',
@@ -77,7 +77,7 @@ const About = () => {
       gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'
     },
     { 
-      name: 'Emily Watson', 
+      name: 'Seeta Sharma', 
       role: 'Project Manager', 
       emoji: '👩‍💼', 
       expertise: 'Agile Management',
@@ -85,7 +85,7 @@ const About = () => {
       gradient: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)'
     },
     { 
-      name: 'David Kim', 
+      name: 'Rohit Kumar', 
       role: 'Lead Developer', 
       emoji: '👨‍💻', 
       expertise: 'React & Node.js',
@@ -93,7 +93,7 @@ const About = () => {
       gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
     },
     { 
-      name: 'Lisa Anderson', 
+      name: 'Priya Patel', 
       role: 'Marketing Director', 
       emoji: '👩‍💼', 
       expertise: 'Digital Marketing',

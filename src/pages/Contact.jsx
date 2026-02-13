@@ -56,10 +56,10 @@ const Contact = () => {
     {
       icon: <Phone />,
       title: 'Phone',
-      details: '+1 (555) 123-4567',
+      details: '+91 123-4567',
       subtext: 'Mon-Fri 9am-6pm EST',
       gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-      link: 'tel:+15551234567'
+      link: 'tel:+911234567'
     },
     {
       icon: <Mail />,
@@ -72,8 +72,8 @@ const Contact = () => {
     {
       icon: <MapPin />,
       title: 'Office',
-      details: '123 Tech Street',
-      subtext: 'Silicon Valley, CA 94025',
+      details: '123 Mic testing',
+      subtext: 'Delhi, India 99025',
       gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
       link: 'https://maps.google.com'
     }
@@ -132,13 +132,13 @@ const Contact = () => {
   const testimonials = [
     {
       quote: "TechVision delivered our project on time and exceeded all expectations. Their attention to detail and communication was outstanding!",
-      author: "Sarah Johnson",
+      author: "Shyam",
       role: "CEO, TechStart",
       emoji: "👩‍💼"
     },
     {
       quote: "Best development partner we've ever worked with. Professional, responsive, and incredibly skilled team.",
-      author: "Michael Chen",
+      author: "Sohan",
       role: "Founder, AppCo",
       emoji: "👨‍💻"
     }
@@ -186,11 +186,11 @@ const Contact = () => {
                   <span className="action-desc">Fill out the form</span>
                 </div>
               </a>
-              <a href="tel:+15551234567" className="quick-action-btn">
+              <a href="tel:+911234567" className="quick-action-btn">
                 <Phone size={20} />
                 <div className="action-content">
                   <span className="action-label">Call Us Now</span>
-                  <span className="action-desc">+1 (555) 123-4567</span>
+                  <span className="action-desc">+91 123-4567</span>
                 </div>
               </a>
               <a href="mailto:hello@techvision.com" className="quick-action-btn">
