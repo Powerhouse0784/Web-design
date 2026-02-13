@@ -781,6 +781,31 @@ body.dark .testimonials-subheading {
   color: #9ca3af;
 }
 
+/* Responsive Testimonials Display */
+.testimonials-desktop {
+  display: block;
+}
+
+.testimonials-mobile {
+  display: none;
+}
+
+@media (max-width: 968px) {
+  .testimonials-desktop {
+    display: none;
+  }
+
+  .testimonials-mobile {
+    display: block;
+  }
+
+  .testimonials-ripple-wrapper {
+    min-height: auto;
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+}
+
 .section-header {
   text-align: center;
   margin-bottom: 70px;

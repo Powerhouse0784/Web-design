@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, Zap, Shield, Sparkles, Users, TrendingUp, Award, Rocket } from 'lucide-react';
 import { InfiniteMovingCards } from '../components/InfiniteMovingCards';
+import MobileTestimonials from '../components/MobileTestimonials';
 import { GlareCard } from '../components/GlareCard';
 import { GridBackground } from '../components/GridBackground';
 import { BackgroundRippleEffect } from '../components/BackgroundRippleEffect';
@@ -102,31 +103,31 @@ const Home = () => {
 
   const testimonials = [
     {
-      name: 'Sarah Johnson',
+      name: 'Shyam',
       role: 'CEO, TechStart',
       content: 'TechVision transformed our digital presence completely. Their expertise and dedication are unmatched.',
       avatar: '👩‍💼'
     },
     {
-      name: 'Michael Chen',
+      name: 'Sohan',
       role: 'Founder, AppCo',
       content: 'The team delivered beyond our expectations. Our app now has 100K+ active users thanks to their work.',
       avatar: '👨‍💻'
     },
     {
-      name: 'Emily Rodriguez',
+      name: 'Mohan',
       role: 'CTO, DataFlow',
       content: 'Professional, innovative, and results-driven. TechVision is our go-to development partner.',
       avatar: '👩‍🔬'
     },
     {
-      name: 'David Park',
+      name: 'Rohan',
       role: 'Product Manager, InnovateCo',
       content: 'Outstanding quality and attention to detail. They turned our vision into reality flawlessly.',
       avatar: '👨‍💼'
     },
     {
-      name: 'Lisa Martinez',
+      name: 'Meena',
       role: 'Director, CloudScale',
       content: 'Best development team we\'ve worked with. Professional, responsive, and incredibly skilled.',
       avatar: '👩‍💻'
@@ -320,7 +321,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Testimonials with Ripple Effect */}
+      {/* Testimonials - COMPLETELY RESPONSIVE */}
       <section className="section testimonials-infinite">
         <div className="testimonials-ripple-wrapper">
           <BackgroundRippleEffect />
@@ -336,12 +337,20 @@ const Home = () => {
               <p className="testimonials-subheading">Don't just take our word for it</p>
             </motion.div>
 
-            <InfiniteMovingCards 
-              items={testimonials} 
-              direction="left" 
-              speed="slow"
-              pauseOnHover={true}
-            />
+            {/* Desktop: Infinite Moving Cards */}
+            <div className="testimonials-desktop">
+              <InfiniteMovingCards 
+                items={testimonials} 
+                direction="left" 
+                speed="slow"
+                pauseOnHover={true}
+              />
+            </div>
+
+            {/* Mobile: Modern Swipeable Carousel */}
+            <div className="testimonials-mobile">
+              <MobileTestimonials testimonials={testimonials} />
+            </div>
           </div>
         </div>
       </section>
@@ -371,8 +380,6 @@ const Home = () => {
             <p>Let's build something amazing together. Get in touch with our team today.</p>
             
             <div className="cta-buttons">
-              <Link to="/contact" className="btn btn-primary btn-pulse">
-              </Link>
               <Link to="/portfolio" className="btn btn-outline-white">
                 View Portfolio
               </Link>

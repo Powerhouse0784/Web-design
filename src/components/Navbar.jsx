@@ -63,7 +63,11 @@ const Navbar = () => {
             </motion.div>
           </button>
 
-          <Link to="/contact" className="btn btn-primary cta-btn">
+          {/* Get Started Button - Hidden when menu is open */}
+          <Link 
+            to="/contact" 
+            className={`btn btn-primary cta-btn ${isOpen ? 'cta-hidden' : ''}`}
+          >
             Get Started
           </Link>
 
